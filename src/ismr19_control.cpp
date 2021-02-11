@@ -159,7 +159,7 @@ public:
     ikmsg.request.ik_request.avoid_collisions = true;
     ikmsg.request.ik_request.pose_stamped = pose;
     ikmsg.request.ik_request.timeout = ros::Duration(5);
-    ikmsg.request.ik_request.attempts = 5;
+//    ikmsg.request.ik_request.attempts = 5;
 
     ros::ServiceClient client = nh.serviceClient<moveit_msgs::GetPositionIK>("compute_ik");
     if( client.call( ikmsg ) ){}
