@@ -187,8 +187,8 @@ int main( int argc, char** argv ){
   ros::init(argc, argv, "ismr19_control");
   
   ros::NodeHandle nh;
-      ros::AsyncSpinner spinner(1);
-      spinner.start();
+  ros::AsyncSpinner spinner(1);
+  spinner.start();
 
   ismr19_control control(nh);
 
